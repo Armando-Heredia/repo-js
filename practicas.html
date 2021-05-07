@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+  var pesoM;
+  pesoM = prompt('introduce peso de Mario','')
+  var alturaM;
+  alturaM = prompt('introduce altura de Mario','')
+  am = Math.pow(alturaM, 2)
+  var pesoL;
+  pesoL = prompt('introduce peso de Luigi','')
+  var alturaL;
+  alturaL = prompt('introduce altura de Luigi','')
+  al = Math.pow(alturaL, 2)
+  
+  IMCL = pesoM/alturaM
+  IMCM = pesoL/alturaL
+  
+
+  MarioMayorIMC = IMCM < IMCL? "MARIO ES MAYOR": "LUIGI ES MAYOR"
+  alert(MarioMayorIMC)
+  console.log(MarioMayorIMC)
+  console.log(IMCL)
+  console.log(IMCM)
+
+</script>
+</html>

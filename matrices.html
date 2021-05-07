@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+</body>
+<script>
+   
+    array = [7,5,4,3]
+    var raiz = array.map(Math.sqrt);
+    console.log("Matris: "+ array)
+    console.log("rais de matrices "+raiz)
+
+    a = [ [7, 5], [3, 4]];
+    n = 2;
+    d = s = 0; 
+    for (i = 0; i < n; i++) {
+        d += a[i][i];
+        s += a[i][n - i - 1]; 
+    }
+
+    var res = d-s;
+    if(res < 0){
+        nres = res * -1;
+        console.log(`la resta de las matrices ${nres} (conversion a positivo)`)    
+    }else{
+        console.log(`la resta de las matrices es ${res}`)
+    }
+
+    console.log(`la suma de la primera diagonal es  ${d}`);
+    console.log(`la suma de la primera diagonal es  ${s}`);
+</script>
+</html>
